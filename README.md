@@ -12,8 +12,11 @@ This project is a centralized CRM and subscription portal designed to streamline
 🚀 Key Features
 For Administrators:
 -- Dashboard: View real-time KPIs, active members, and daily earnings.
+
 -- Member Management: Handle registrations, membership tiers, and status tracking.
+
 -- Staff & Trainer Management: Assign trainers, manage availability, and book sessions.
+
 -- Reporting: Automated reports for revenue and attendance to reduce reconciliation time.
 
 For Staff:

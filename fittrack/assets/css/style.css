@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap');
+
+:root {
+    --primary-bg: #0f172a;
+    --secondary-bg: #1e293b;
+    --accent-color: #3b82f6;
+    --accent-glow: rgba(59, 130, 246, 0.5);
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --glass-bg: rgba(30, 41, 59, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background: linear-gradient(135deg, var(--primary-bg) 0%, var(--secondary-bg) 100%);
+    color: var(--text-main);
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Glassmorphism Classes */
+.glass-panel {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+.glass-nav {
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--glass-border);
+    padding: 1rem 2rem;
+}
+
+.glass-nav .navbar-brand {
+    font-weight: 800;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, #38bdf8, #818cf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Sidebar styling */
+.sidebar {
+    background: rgba(30, 41, 59, 0.6);
+    border-right: 1px solid var(--glass-border);
+    min-height: calc(100vh - 70px);
+    padding: 2rem 1rem;
+}
+
+.sidebar .nav-link {
+    color: var(--text-muted);
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.sidebar .nav-link:hover, .sidebar .nav-link.active {
+    background: rgba(59, 130, 246, 0.15);
+    color: #38bdf8;
+    box-shadow: inset 3px 0 0 #38bdf8;
+}
+
+/* Base Inputs and Tables for Dark Theme */
+.table {
+    color: #ffffff !important;
+    vertical-align: middle;
+}
+.table-dark {
+    background-color: transparent;
+}
+.table th {
+    border-bottom-color: var(--glass-border);
+    color: #cbd5e1 !important;
+    font-weight: 600;
+}
+.table td, .table th {
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+.table-hover tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    color: #ffffff !important;
+}
+
+.form-control, .form-select {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    color: #ffffff !important;
+}
+.form-control:focus, .form-select:focus {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    color: #ffffff !important;
+    border-color: #38bdf8 !important;
+    box-shadow: 0 0 10px rgba(56, 189, 248, 0.5) !important;
+}
+.form-control::placeholder {
+    color: #94a3b8 !important;
+}
+/* Fix select options in dropdowns */
+option {
+    background-color: #1e293b;
+    color: #ffffff;
+}
+
+body {
+    color: #ffffff !important;
+}
+
+/* Custom Metric Cards */
+.metric-card {
+    border: none;
+    background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.01) 100%);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.metric-card:hover {
+    transform: translateY(-5px);
+}
+.metric-card-primary { border-top: 4px solid #3b82f6; }
+.metric-card-success { border-top: 4px solid #10b981; }
+.metric-card-warning { border-top: 4px solid #f59e0b; }
+.metric-card-danger { border-top: 4px solid #ef4444; }
+
+.metric-value {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+/* Buttons */
+.btn-glass {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+.btn-glass:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+.btn-primary-custom {
+    background: linear-gradient(135deg, #3b82f6, #6366f1);
+    border: none;
+    color: white;
+    box-shadow: 0 4px 15px var(--accent-glow);
+    transition: all 0.3s ease;
+}
+.btn-primary-custom:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.6);
+    color: white;
+}
+
+/* Override Bootstrap Defaults */
+.text-muted {
+    color: #cbd5e1 !important; /* Light slate gray */
+}

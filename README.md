@@ -71,7 +71,7 @@ The **Fitness CRM & Subscription Portal** addresses the need for operational aut
 * **Biometrics:** Integration with fingerprint or face scanners for automated entry.
 
 ## 👥 Contributors
-* **[Krish Chapadia]()** - *Backend Developer* 
+* **[Krish Chapadia](https://github.com/KrishChapadia)** - *Backend Developer* 
 
 ## 📄 License
 This project is open-source and available under the [MIT License](LICENSE).
